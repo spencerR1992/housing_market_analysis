@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  notebook:
+    build: services/pyds
+    ports:
+      - "8888:8888"
+    volumes:
+      - ${PWD}:/home
+    
